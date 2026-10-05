@@ -7,23 +7,15 @@ A lightweight collection of stream buffering, bounded channel helpers, and async
 - **Zero-Copy Slicing:** Efficient memory management for chunked payload handling.
 - **Backpressure-Aware Buffers:** Configurable high/low watermarks to prevent unbounded memory growth.
 - **Asynchronous Task Batching:** Micro-batched event flushing with jitter-tolerant timeouts.
-
-## Quick Start
-
-`ash
-git clone https://github.com/abhi-byte62/core-toolkit.git
-cd core-toolkit
-`
+- **Systems & Concurrency Primitives:** Lock-free circular ring buffers, atomic counters, and slab allocators.
 
 ## Architecture
 
 `
 core-toolkit/
-â”œâ”€â”€ src/
-â”‚   â”œâ”€â”€ buffer/        # Ring buffer and zero-copy slicing primitives
-â”‚   â”œâ”€â”€ pipeline/      # Backpressure and batching utilities
-â”‚   â””â”€â”€ events/        # Typed event dispatchers
-â””â”€â”€ tests/             # Concurrency and fuzzing test suites
+â”œâ”€â”€ src/               # 40+ modular systems utilities and buffer primitives
+â”œâ”€â”€ index.js           # Package entry point
+â””â”€â”€ tests/             # Unit and fuzzing test suites
 `
 
 ## License
